@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="objC" class="com.example.gpslabspringboot.client.Client"></bean>
+    <bean id="objCoordonnees" class="com.example.gpslabspringboot.modele.Coordonnees"></bean>
+    <bean id="objM" class="com.example.gpslabspringboot.modele.Message"></bean>
+    <bean id="objRG" class="com.example.gpslabspringboot.modele.RandomGps"></bean>
+    <bean id="objRGM" class="com.example.gpslabspringboot.modele.RandomGpsMessage">
+        <constructor-arg ref="objM"/>
+    </bean>
+</beans>
